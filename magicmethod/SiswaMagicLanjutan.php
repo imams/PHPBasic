@@ -11,7 +11,7 @@ class Siswa {
 				return call_user_func([$this,'get'.$atribute]);
 			}
 			else{
-				return $this->atribute;
+				return $this->$atribute;
 			}
 		}
 	}
@@ -21,11 +21,19 @@ class Siswa {
 			$this->$atribut = $value;
 		}
 	}
+
+	public function getBerat(){
+		return $this->berat ." kg";
+	}
+
+	public function getTinggi(){
+		return $this->tinggi . " cm";
+	}
 }
 
 $siswa 			= new Siswa();
-$siswa->nama 	= "Beni";
-$siswa->alamat 	= "Bandung";
+$siswa->nama 	= " Beni";
+$siswa->alamat 	= " Bandung";
 $siswa->berat 	= 67;
 $siswa->tinggi 	= 180;
 
