@@ -32,7 +32,7 @@ class Siswa {
 }
 
 $siswa 			= new Siswa();
-$siswa->nama 	= " Beni";
+$siswa->nama 	= "imam";
 $siswa->alamat 	= " Bandung";
 $siswa->berat 	= 67;
 $siswa->tinggi 	= 180;
